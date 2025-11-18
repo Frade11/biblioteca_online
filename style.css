@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', 'Georgia', serif;
+  background: linear-gradient(135deg, #f7f2ec 0%, #e6dccb 100%);
+  min-height: 100vh;
+  color: #3a2f2f;
+  line-height: 1.6;
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* header */
+.header {
+  background: rgba(255, 255, 255, 0.8);
+  color: #3a2f2f;
+  padding: 3rem 0;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(138, 110, 85, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.header img{
+    width: 200px;
+}
+.header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(135deg, #6b4b3e, #cfa16d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header p {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+/* nav */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #b3845a, #cfa16d);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(146, 100, 63, 0.3);
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #a97648, #d8b07a);
+}
+
+/* sections */
+.section {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem 2.5rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(138, 110, 85, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  color: #6b4b3e;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #cfa16d;
+  padding-bottom: 0.5rem;
+}
+
+/* forms */
+.form-container {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #4a3c34;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #d8c7b0;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #cfa16d;
+  box-shadow: 0 0 8px rgba(207, 161, 109, 0.3);
+}
+
+/* btns */
+.btn {
+  padding: 12px 32px;
+  background: linear-gradient(135deg, #cfa16d, #9c7550);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(146, 100, 63, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(135deg, #b3845a, #d8b07a);
+}
+
+/* tables */
+.table-container {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(207, 161, 109, 0.2);
+}
+
+.data-table th {
+  background: linear-gradient(135deg, #b3845a, #cfa16d);
+  color: #fff;
+  font-weight: bold;
+}
+
+.data-table tr:hover {
+  background-color: rgba(207, 161, 109, 0.08);
+}
+
+/* alerts */
+.alert {
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.alert-success {
+  background-color: #e8f8ef;
+  border: 2px solid #a8e0b7;
+  color: #2d6a4f;
+}
+
+.alert-error {
+  background-color: #fce8e8;
+  border: 2px solid #f5b7b1;
+  color: #8b2e2e;
+}
+
+/* availibility */
+.available {
+  color: #2d6a4f;
+  font-weight: bold;
+}
+
+.unavailable {
+  color: #b33a3a;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .section {
+    padding: 1.2rem;
+  }
+}
