@@ -78,7 +78,7 @@ $books_result = $conn->query("SELECT titlu_carte FROM carti_biblioteca ORDER BY 
                     </div>
 
                     <button type="submit" class="btn">Actualizeaza Disponibilitatea</button>
-                    <a href="index.php" style="margin-left: 10px;">Inapoi la pagina principala</a>
+                    <a href="index.php" class="nav-btn" style="margin-left: 10px;">Inapoi la pagina principala</a>
                 </form>
             </div>
         </div>

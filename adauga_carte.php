@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
 
                     <button type="submit" class="btn">Adauga Cartea</button>
-                    <a href="index.php" style="margin-left: 10px;">Inapoi la pagina principala</a>
+                    <a href="index.php" class="nav-btn" style="margin-left: 10px;">Inapoi la pagina principala</a>
                 </form>
             </div>
         </div>
